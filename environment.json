@@ -1,0 +1,33 @@
+{
+	"id": "4466580f-0197-44ac-8768-79527bc2d56d",
+	"name": "group_30",
+	"values": [
+		{
+			"key": "name",
+			"value": "Ian",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "age",
+			"value": "27",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "salary",
+			"value": "1000",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "weight",
+			"value": "75",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2022-06-18T11:26:13.312Z",
+	"_postman_exported_using": "Postman/9.21.3"
+}

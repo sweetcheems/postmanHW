@@ -2,16 +2,28 @@
 	"info": {
 		"_postman_id": "bf307e69-ab3c-483f-9c3b-3bb646feb767",
 		"name": "HW_1",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18837275"
 	},
 	"item": [
 		{
 			"name": "EP_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "162.55.220.72:5005/get_method?name=Ian&age=27",
+					"raw": "162.55.220.72:5005/get_method?name={{name}}&age={{age}}",
 					"host": [
 						"162",
 						"55",
@@ -25,11 +37,11 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "Ian"
+							"value": "{{name}}"
 						},
 						{
 							"key": "age",
-							"value": "27"
+							"value": "{{age}}"
 						}
 					]
 				}
@@ -46,17 +58,17 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "Ian",
+							"value": "{{name}}",
 							"type": "text"
 						},
 						{
 							"key": "age",
-							"value": "27",
+							"value": "{{age}}",
 							"type": "text"
 						},
 						{
 							"key": "salary",
-							"value": "1000",
+							"value": "{{salary}}",
 							"type": "text"
 						}
 					]
@@ -83,7 +95,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "162.55.220.72:5005/object_info_1?name=Ian&age=27&weight=75",
+					"raw": "162.55.220.72:5005/object_info_1?name={{name}}&age={{age}}&weight={{weight}}",
 					"host": [
 						"162",
 						"55",
@@ -97,15 +109,15 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "Ian"
+							"value": "{{name}}"
 						},
 						{
 							"key": "age",
-							"value": "27"
+							"value": "{{age}}"
 						},
 						{
 							"key": "weight",
-							"value": "75"
+							"value": "{{weight}}"
 						}
 					]
 				}
@@ -118,7 +130,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "162.55.220.72:5005/object_info_2?name=Ian&age=27&salary=1000",
+					"raw": "162.55.220.72:5005/object_info_2?name={{name}}&age={{age}}&salary={{salary}}",
 					"host": [
 						"162",
 						"55",
@@ -132,15 +144,15 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "Ian"
+							"value": "{{name}}"
 						},
 						{
 							"key": "age",
-							"value": "27"
+							"value": "{{age}}"
 						},
 						{
 							"key": "salary",
-							"value": "1000"
+							"value": "{{salary}}"
 						}
 					]
 				}
@@ -153,7 +165,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "162.55.220.72:5005/object_info_3?name=Ian&age=27&salary=1000",
+					"raw": "162.55.220.72:5005/object_info_3?name={{name}}&age={{age}}&salary={{salary}}",
 					"host": [
 						"162",
 						"55",
@@ -167,15 +179,15 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "Ian"
+							"value": "{{name}}"
 						},
 						{
 							"key": "age",
-							"value": "27"
+							"value": "{{age}}"
 						},
 						{
 							"key": "salary",
-							"value": "1000"
+							"value": "{{salary}}"
 						}
 					]
 				}
@@ -188,7 +200,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "162.55.220.72:5005/object_info_4?name=Ian&age=27&salary=1000",
+					"raw": "162.55.220.72:5005/object_info_4?name={{name}}&age={{age}}&salary={{salary}}",
 					"host": [
 						"162",
 						"55",
@@ -202,15 +214,15 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "Ian"
+							"value": "{{name}}"
 						},
 						{
 							"key": "age",
-							"value": "27"
+							"value": "{{age}}"
 						},
 						{
 							"key": "salary",
-							"value": "1000"
+							"value": "{{salary}}"
 						}
 					]
 				}
@@ -222,8 +234,28 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "{{name}}",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "{{age}}",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "{{salary}}",
+							"type": "text"
+						}
+					]
+				},
 				"url": {
-					"raw": "162.55.220.72:5005/user_info_2?name=Ian&age=27&salary=1000",
+					"raw": "162.55.220.72:5005/user_info_2",
 					"host": [
 						"162",
 						"55",
@@ -237,15 +269,18 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "Ian"
+							"value": "Ian",
+							"disabled": true
 						},
 						{
 							"key": "age",
-							"value": "27"
+							"value": "27",
+							"disabled": true
 						},
 						{
 							"key": "salary",
-							"value": "1000"
+							"value": "1000",
+							"disabled": true
 						}
 					]
 				}
